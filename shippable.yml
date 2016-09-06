@@ -1,0 +1,58 @@
+language: python
+
+python:
+  - 2.7
+  - 3.5
+  - pypy
+  - pypy3
+
+#services:
+#  - #any supported service
+
+#env:
+#  - #env1=foo
+#  - #env2=bar
+
+#matrix:
+
+build:
+#
+#  pre_ci:
+#
+#  pre_ci_boot:
+#    image_name:
+#    image_tag:
+#    pull:
+#    options:
+  ci:
+      #Create folders for test and code coverage
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+    - "pip install -r requirements.txt"
+    - "make test"
+#  post_ci:
+#    - #command1
+#    - #command2
+#  on_success:
+#    - #command1
+#    - #command2
+#  on_failure:
+#    - #command1
+#    - #command2
+#  cache:
+#  cache_dir_list:
+#    - #dir1
+#  push:
+
+#integrations:
+# notifications:
+#   - integrationName:
+#     type:
+#     recipients:
+#       - #recp1
+#       - #recp2
+#
+#    hub:
+#      - integrationName:
+#        type:
+#        agent_only:
