@@ -1,7 +1,10 @@
+from foobar.Foobar import Foobar
+
+
 def test_something():
     assert 1 == 1
 
 
-def test_something_else():
-    # mistake on purpose:
-    assert 1 + 1 == 3
+def test_foobar():
+    foobar = Foobar()
+    assert foobar.bread_and_butter() is True

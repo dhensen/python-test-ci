@@ -5,7 +5,7 @@ python:
   - "3.3"
   - "3.5"
 install: "pip install -r requirements.txt"
-script: py.test tests
+script: make test
 branches:
   only:
     - master
