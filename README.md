@@ -1,0 +1,1 @@
+setting up CI pipeline for a python package
