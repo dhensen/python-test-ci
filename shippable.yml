@@ -29,7 +29,7 @@ build:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
     - "pip install -r requirements.txt"
-    - "make test"
+    - "make shippable-build"
 #  post_ci:
 #    - #command1
 #    - #command2

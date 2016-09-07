@@ -4,7 +4,7 @@ python:
   - "3.3"
   - "3.5"
 install: "pip install -r requirements.txt"
-script: make test
+script: make travis-build
 branches:
   only:
     - master
