@@ -26,10 +26,8 @@ build:
 #    options:
   ci:
       #Create folders for test and code coverage
-    - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecoverage
     - "pip install -r requirements.txt"
-    - "make shippable-build"
+    - "make shippable_build"
 #  post_ci:
 #    - #command1
 #    - #command2
