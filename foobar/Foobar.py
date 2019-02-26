@@ -5,7 +5,7 @@ class Foobar:
         return first and second
 
     def some_helper(self):
-        return True
+        return False
 
     def another_helper(self):
         return True
